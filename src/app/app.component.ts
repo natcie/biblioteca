@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'biblioteca';
+  title: string = 'ANGULAR - Esercizio della biblioteca di Natascia CIELO';
 }

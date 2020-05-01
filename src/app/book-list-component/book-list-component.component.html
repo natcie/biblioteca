@@ -1,0 +1,6 @@
+<h2>{{ title }}</h2>
+<div class="grigio" *ngFor="let a of books"> 
+    ISBN: {{ a.ISBN }} -- TITOLO: {{ a.title }} -- AUTORE: {{ a.author }} -- COPERTINA: 
+    <img src="{{ a.coverUrl }}" width="150" height="100">
+    
+</div>
