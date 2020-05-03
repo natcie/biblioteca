@@ -1,10 +1,16 @@
 <h2>{{ title }}</h2>
 <div class="giallo">
     ISBN:
-    <input type="text" nome=newBook.ISBN value='Inserisci isbn...'>
+    <input type="text" id="txtisbn" required [(ngModel)]="newBook.ISBN" nome=newBook.ISBN value='Inserisci isbn...'>
     TITOLO:
-    <input type="text" titolo="newBook.title" value='Inserisci titolo..'>
+    <input type="text" id="txttitolo"  required [(ngModel)]="newBook.title" nome=newBook.title value='Inserisci titolo..'>
     AUTORE:
-    <input type="text" autore="newBook.author" value='Inserisci autore...'>
-    <button (click)="addThisBook(newBook)">Aggiungi alla lista</button>
+    <input type="text" id="txtautore" required [(ngModel)]="newBook.author" nome="newBook.author" value='Inserisci autore...'>
+    <button (click)="addThisBook()">Aggiungi alla lista</button>
 </div>
+
+
+
+
+<!--//<input type="text" id="txtTitolo"
+	       required [(ngModel)]="model.titolo" name="titolo"> -->

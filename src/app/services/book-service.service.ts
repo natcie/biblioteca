@@ -6,6 +6,8 @@ import { BOOKS } from '../BOOKS-LIST';
   providedIn: 'root'
 })
 export class BookServiceService {
+  book: { ISBN: string; title: string; author: string; publisher: string; coverUrl: string; };
+  //Book: any;
 
   constructor() { }
  
@@ -13,6 +15,7 @@ export class BookServiceService {
     return BOOKS;
   }
   addBook(book: Book): void {
+    BOOKS.push(book);
   }
 
 }

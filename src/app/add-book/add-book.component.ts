@@ -18,16 +18,15 @@ export class AddBookComponent implements OnInit {
   ngOnInit(): void {
     this.books = this.service.getBooks();
   }
-  addThisBook(newBook: Book){
+  addThisBook(){
     this.service.addBook(this.newBook);
-    this.books.push(this.newBook);
-    this.newBook = {
-      ISBN: '',
-      title: '',
-      author: '',
-      publisher: '',
-      coverUrl:''
-    }
-
+    
+    //this.newBook = {
+    //  ISBN: '',
+    //  title: '',
+    //  author: '',
+    //  publisher: '',
+    //  coverUrl:''
+    //}
   }
 }
